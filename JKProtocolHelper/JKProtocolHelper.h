@@ -10,10 +10,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define JKProtocolHelper(__protocol__, ...)  \
-[JKProtocolHelper helperWithProtocol:@protocol(__protocol__)  \
-executors:[NSArray arrayWithObjects:__VA_ARGS__, nil]]
-
 @interface JKProtocolHelper : NSObject
 
 + (id)helperWithProtocol:(Protocol *)protocol executors:(NSArray *)executors;
